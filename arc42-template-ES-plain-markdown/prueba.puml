@@ -1,0 +1,13 @@
+@startuml testUML
+start
+:Iniciar procesos;
+:Recibir pedido;
+if (Stock disponible?) then (si)
+  :Preparar pedido;
+else (no)
+  :Notificar falta de stock;
+endif
+:Validar stock;
+:Procesar pago; 
+stop
+@enduml
